@@ -1,6 +1,7 @@
 body {
     background: #f7f7f7;
     font-family: verdana;
+    width: 900px;
 }
 
 .photo{
@@ -48,4 +49,12 @@ a{
 .post_image {
     margin: 0px;
     margin-bottom: 15px;
+}
+.contact_list{
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 15px;
+}
+.contact_list li a {
+    color: blue;
 }
