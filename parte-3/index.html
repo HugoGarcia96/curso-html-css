@@ -8,26 +8,38 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@400;700&display=swap"  rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0730e1431.js" crossorigin="anonymous"></script>
     <style>
         #header {
-            background-color: rgb(226, 200, 165);
+            background-color: rgb(14, 175, 234);
             margin-top: 50px;
             margin-bottom: 50px;
             font-family: 'Hubballi', cursive;
             text-transform: uppercase;
         }
+
         #nameAndTitle {
             background-color: white;
             width: 400px;
             margin: auto;
             text-align: center;
-            
+
         }
-        #nameAndTitle h1, h2 {
+
+        #nameAndTitle h1,
+        h2 {
             margin: 0;
         }
-        h1, h2, h3{
+        #contact {
+            list-style-type: none;
+        }
+        #contact i {
+            width:30px;
+            color: rgb(14, 175, 234);
+        }
+
+        h1, h2, h3 {
             text-transform: uppercase;
         }
     </style>
@@ -40,6 +52,20 @@
             <h2>Aluno Engenharia de Controle e automação</h2>
         </div>
     </div>
+    <div id="container">
+        <div id="sidebar"><div>
+         <div class="card">
+            <h3>Contato</h3>
+            <ul id="contact">
+                <li><i class="fa-solid fa-envelope"></i>contatohugogarcia@outlook.com</li>
+                <li><i class="fa-solid fa-phone"></i>32999269379</li>
+                <li><i class="fa-solid fa-city"></i>Catagauses-MG</li>
+            </ul>
+         </div>   
+        <div id="content"></div>
+        
+    </div>
+
 </body>
 
 </html>
