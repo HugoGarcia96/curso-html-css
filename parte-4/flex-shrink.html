@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundamentos flex shrink</title>
+
+    <style>
+        
+    .flex-container{
+        display: flex;
+        max-width: 400px;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+    }
+    .item{
+        background-color: brown;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+    }
+    .flex-1{
+        flex: 1;
+    }
+    .flex-2{
+        flex: 2;
+    }
+    .largura{
+        width: 200px;
+    }
+
+ 
+    </style>
 </head>
 <body>
+    <p>flex: 1</p>
+    <div class="flex-container">
+        <div class="item flex-1">AAAAAAA</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CCCCC</div>
+        <div class="item flex-1">DDDD</div>
+        <div class="item flex-1">FFFFFFFFFFFFFFFFF</div>
+    </div>
+
+    <p>flex: mix</p>
+    <div class="flex-container">
+        <div class="item flex-1">AAAAAAA</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-2">CCCCC</div>
+        <div class="item flex-1">DDDD</div>
+        <div class="item flex-1">FFFFFFFFFFFFFFFFF</div>
+    </div>
+
+    <p>width ignore </p>
+    <div class="flex-container">
+        <div class="item flex-1 largura">AAAAAAA</div>
+        <div class="item flex-1 largura">BBB</div>
+        <div class="item flex-1 largura">CCCCC</div>
+        <div class="item flex-1 largura">DDDD</div>
+        <div class="item flex-1 largura">FFFFFFFFFFFFFFFFF</div>
+    </div>
     
 </body>
 </html>
